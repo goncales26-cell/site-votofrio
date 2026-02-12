@@ -28,7 +28,12 @@
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
         
-        .logo img { height: 60px; width: auto; }
+        .logo img { 
+    height: 60px; 
+    width: auto;
+    border-radius: 15px; /* Aqui está a mágica do arredondamento */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Uma sombra suave pra dar destaque */
+}
         
         .nav-links { list-style: none; display: flex; }
         .nav-links a { color: var(--dark); text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
@@ -289,3 +294,4 @@
     </script>
 </body>
 </html>
+
