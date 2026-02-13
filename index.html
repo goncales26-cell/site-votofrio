@@ -55,7 +55,7 @@
         .text-center { text-align: center; }
         .mb-4 { margin-bottom: 32px; }
 
-        /* Botão Principal (Igual ao print) */
+        /* Botão Principal */
         .btn-primary {
             display: inline-flex;
             justify-content: center;
@@ -76,11 +76,16 @@
         .btn-icon { margin-left: 8px; }
 
         /* --- 3. HEADER (Minimalista) --- */
-        header { background: white; padding: 16px 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #E2E8F0; }
+        header { background: white; padding: 12px 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #E2E8F0; }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
-        .logo img { height: 40px; width: auto; }
         
-        /* Menu Hamburguer (Visual apenas para mobile) */
+        /* AJUSTE DO LOGO AQUI */
+        .logo img { 
+            height: 55px; /* Aumentado de 40px para 55px */
+            width: auto;
+            border-radius: 12px; /* Adicionado cantos arredondados */
+        }
+        
         .menu-btn { font-size: 1.5rem; color: var(--text-dark); cursor: pointer; }
 
         /* --- 4. HERO SECTION (Gradiente Suave) --- */
