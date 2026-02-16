@@ -5,28 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Votofrio | Ar Condicionado em Sorocaba, Votorantim e Região</title>
-    <meta name="description" content="Venda, instalação, manutenção e limpeza de ar condicionado. Atendemos Sorocaba (Campolim, Zona Norte, Sul...), Votorantim e toda região. Orçamento grátis!">
-    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção ar condicionado, limpeza de ar condicionado, comprar ar condicionado, inverter, samsung, lg, springer, elgin, campolim, wanel ville, vila hortência">
+    <meta name="description" content="Especialistas em venda, instalação, manutenção e limpeza de ar condicionado. Atendimento rápido em Sorocaba (Campolim, Zona Norte...), Votorantim e região.">
+    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção ar condicionado, limpeza de ar condicionado, comprar ar condicionado, inverter, samsung, lg, springer, elgin, campolim, wanel ville">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="GTI Desenvolvimento">
     
     <meta name="geo.region" content="BR-SP">
-    <meta name="geo.placename" content="Sorocaba">
-    <meta name="geo.position" content="-23.5015;-47.4521">
-    <meta name="ICBM" content="-23.5015, -47.4521">
+    <meta name="geo.placename" content="Votorantim">
+    <meta name="geo.position" content="-23.5388;-47.4439">
+    <meta name="ICBM" content="-23.5388, -47.4439">
 
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Votofrio - Especialistas em Ar Condicionado">
-    <meta property="og:description" content="Venda, instalação e manutenção de ar condicionado com transparência e qualidade em Sorocaba e Votorantim.">
+    <meta property="og:description" content="Conforto térmico com qualidade. Instalação e manutenção em Sorocaba e Votorantim.">
     <meta property="og:url" content="https://votofrio.com.br/">
     <meta property="og:site_name" content="Votofrio">
     <meta property="og:image" content="./antes_depois_03.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Votofrio Ar Condicionado",
+      "image": "https://votofrio.com.br/logo.png",
+      "telephone": "+5515996736948",
+      "email": "contato@votofrio.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Votorantim",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "url": "https://votofrio.com.br",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Votorantim"},
+        {"@type": "City", "name": "Sorocaba"},
+        {"@type": "City", "name": "Salto de Pirapora"},
+        {"@type": "City", "name": "Itu"}
+      ]
+    }
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./logo.png">
 
     <style>
-        /* --- 1. CONFIGURAÇÕES GERAIS --- */
+        /* --- CONFIGURAÇÕES GERAIS --- */
         :root {
             --primary: #0F6CBD;
             --primary-hover: #0C5AA3;
@@ -40,7 +74,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         
-        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
         
         a { text-decoration: none; }
         ul { list-style: none; }
@@ -72,7 +106,7 @@
             cursor: pointer;
             gap: 10px;
         }
-        .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); color: #FFFFFF !important; }
+        .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
         
         .btn-outline {
             background: transparent;
@@ -99,11 +133,19 @@
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; }
 
-        /* --- SOBRE NÓS --- */
+        /* --- SOBRE NÓS (Melhorado para leitura) --- */
         .about-section { padding: 80px 0; background: white; }
-        .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
-        .about-text { font-size: 1.1rem; line-height: 1.8; color: #4B5563; }
+        .about-content { max-width: 900px; margin: 0 auto; }
+        .about-text { font-size: 1.1rem; line-height: 1.8; color: #4B5563; text-align: center; margin-bottom: 30px; }
         .about-highlight { color: var(--primary); font-weight: 600; }
+        .about-list { 
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; list-style: none; margin-top: 20px; 
+        }
+        .about-list li {
+            background: #F9FAFB; padding: 10px 20px; border-radius: 50px; font-weight: 600; color: var(--text-main); border: 1px solid #E5E7EB;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .check-icon { color: var(--primary); width: 20px; height: 20px; }
 
         /* --- SERVIÇOS --- */
         .services { padding: 80px 0; background: #F9FAFB; }
@@ -129,21 +171,10 @@
         .feature-icon { width: 80px; height: 80px; background: #EFF6FF; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
         .feature-icon svg { width: 40px; height: 40px; stroke: currentColor; fill: none; stroke-width: 2; }
 
-        /* --- PROCESSO (CORREÇÃO DA LINHA AQUI) --- */
+        /* --- PROCESSO (Ajustado) --- */
         .process { padding: 80px 0; background: white; text-align: center; }
         .process-grid { display: flex; justify-content: space-between; align-items: flex-start; margin-top: 60px; position: relative; flex-wrap: wrap; gap: 30px; }
-        
-        /* CORREÇÃO: Mudado de 10% para 15% para esconder as pontas */
-        .process-line { 
-            position: absolute; 
-            top: 40px; 
-            left: 15%;  /* Ajustado para não sobrar na esquerda */
-            right: 15%; /* Ajustado para não sobrar na direita */
-            border-top: 2px dashed #D1D5DB; 
-            z-index: 0; 
-            display: none; 
-        }
-        
+        .process-line { position: absolute; top: 40px; left: 15%; right: 15%; border-top: 2px dashed #D1D5DB; z-index: 0; display: none; }
         .process-item { position: relative; z-index: 1; flex: 1; min-width: 250px; }
         .process-icon { width: 80px; height: 80px; background: var(--primary); color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(15, 108, 189, 0.2); }
         .process-icon svg { width: 36px; height: 36px; fill: currentColor; }
@@ -185,12 +216,7 @@
         .developer-credit { color: #6B7280; font-size: 0.85rem; margin-top: 5px; display: block; }
         .developer-credit strong { color: #9CA3AF; }
 
-        .whatsapp-float {
-            position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
-            background: #25D366; color: white; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: 0.3s;
-        }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 1000; transition: 0.3s; }
         .whatsapp-float:hover { transform: scale(1.1); }
         .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
 
@@ -214,9 +240,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#depoimentos">Avaliações</a>
-                <a href="https://wa.me/5515996736948" class="btn">
-                    Orçamento Grátis
-                </a>
+                <a href="https://wa.me/5515996736948" class="btn">Orçamento Grátis</a>
             </nav>
             <div class="mobile-menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -252,11 +276,15 @@
             </div>
             <div class="about-content">
                 <p class="about-text">
-                    Empresa especializada na <span class="about-highlight">venda, instalação e manutenção de ar condicionado</span>, atuando no mercado com transparência e sempre buscando a satisfação do cliente, em <span class="about-highlight">Votorantim e região</span>.
-                    <br><br>
-                    Estamos prontos para oferecer <strong>os melhores produtos para seu projeto</strong>, trabalhamos somente com materiais de qualidade.
-                    Entre em contato e peça seu orçamento sem compromisso, será uma satisfação atendê-lo(a).
+                    Empresa especializada na <span class="about-highlight">venda, instalação e manutenção de ar condicionado</span>, atuando no mercado com transparência e foco na satisfação do cliente em <span class="about-highlight">Votorantim e região</span>.
                 </p>
+                
+                <ul class="about-list">
+                    <li><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Transparência Total</li>
+                    <li><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Materiais de Qualidade</li>
+                    <li><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Melhores Produtos</li>
+                    <li><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Orçamento Sem Compromisso</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -301,15 +329,15 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="./antes_depois_01.png" alt="Higienização de Ar Condicionado" class="gallery-img">
+                    <img src="./antes_depois_01.png" alt="Higienização de Ar Condicionado" class="gallery-img" loading="lazy">
                     <div class="gallery-info"><h4>Higienização Completa</h4><p>Remoção de fungos e sujeira acumulada.</p></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./antes_depois_02.png" alt="Manutenção Preventiva" class="gallery-img">
+                    <img src="./antes_depois_02.png" alt="Manutenção Preventiva" class="gallery-img" loading="lazy">
                     <div class="gallery-info"><h4>Manutenção Preventiva</h4><p>Aumenta a vida útil e reduz consumo.</p></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./antes_depois_03.png" alt="Instalação de Ar Condicionado" class="gallery-img">
+                    <img src="./antes_depois_03.png" alt="Instalação de Ar Condicionado" class="gallery-img" loading="lazy">
                     <div class="gallery-info"><h4>Instalação Padrão</h4><p>Acabamento impecável e normas técnicas.</p></div>
                 </div>
             </div>
