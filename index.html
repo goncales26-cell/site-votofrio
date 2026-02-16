@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Votofrio | Ar Condicionado em Sorocaba, Votorantim e Região</title>
-    <meta name="description" content="Especialistas em venda, instalação, manutenção e limpeza de ar condicionado. Atendimento rápido em Sorocaba (Campolim, Zona Norte...), Votorantim e região.">
-    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção ar condicionado, limpeza de ar condicionado, comprar ar condicionado, inverter, samsung, lg, springer, elgin, campolim, wanel ville">
+    <meta name="description" content="Especialistas em venda, instalação, manutenção e limpeza de ar condicionado. Atendimento rápido em Sorocaba, Votorantim e região.">
+    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção, lg, samsung, midea, fujitsu, gree, elgin, consul">
     <meta name="robots" content="index, follow">
     <meta name="author" content="GTI Desenvolvimento">
     
-    <meta name="geo.region" content="BR-SP">
-    <meta name="geo.placename" content="Votorantim">
-    <meta name="geo.position" content="-23.5388;-47.4439">
-    <meta name="ICBM" content="-23.5388, -47.4439">
-
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Votofrio - Especialistas em Ar Condicionado">
@@ -36,21 +31,7 @@
         "addressLocality": "Votorantim",
         "addressRegion": "SP",
         "addressCountry": "BR"
-      },
-      "url": "https://votofrio.com.br",
-      "priceRange": "$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-        ],
-        "opens": "08:00",
-        "closes": "18:00"
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Votorantim"},
-        {"@type": "City", "name": "Sorocaba"}
-      ]
+      }
     }
     </script>
 
@@ -58,7 +39,7 @@
     <link rel="icon" type="image/png" href="./logo.png">
 
     <style>
-        /* --- CONFIGURAÇÕES GERAIS --- */
+        /* --- GERAIS --- */
         :root {
             --primary: #0F6CBD;
             --primary-hover: #0C5AA3;
@@ -71,47 +52,19 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        
         body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
-        
         a { text-decoration: none; }
         ul { list-style: none; }
-        
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .text-center { text-align: center; }
-        
         h1, h2, h3 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5px; }
         p { color: var(--text-light); font-size: 1.05rem; }
-
-        .section-label {
-            color: var(--primary); font-weight: 600; text-transform: uppercase;
-            font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 12px; display: block;
-        }
+        .section-label { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 12px; display: block; }
 
         /* --- BOTÕES --- */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--primary);
-            color: #FFFFFF !important;
-            padding: 12px 28px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-            gap: 10px;
-        }
+        .btn { display: inline-flex; align-items: center; justify-content: center; background-color: var(--primary); color: #FFFFFF !important; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: 0.3s; border: none; cursor: pointer; gap: 10px; }
         .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
-        
-        .btn-outline {
-            background: transparent;
-            border: 1px solid #E5E7EB;
-            color: var(--text-main) !important;
-            margin-left: 10px;
-        }
+        .btn-outline { background: transparent; border: 1px solid #E5E7EB; color: var(--text-main) !important; margin-left: 10px; }
         .btn-outline:hover { background: #F3F4F6; }
 
         /* --- HEADER --- */
@@ -123,7 +76,7 @@
         .nav-menu a:hover { color: var(--primary); }
         .mobile-menu-btn { display: none; cursor: pointer; color: var(--text-main); }
 
-        /* --- HERO (COM IMAGEM CORRIGIDA) --- */
+        /* --- HERO --- */
         .hero { padding: 80px 0; background: radial-gradient(circle at top right, #EFF6FF 0%, #FFFFFF 60%); overflow: hidden; }
         .hero-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
         .hero-content { flex: 1; min-width: 300px; max-width: 600px; }
@@ -131,13 +84,8 @@
         .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px; }
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; }
-        
         .hero-image { flex: 1; min-width: 300px; display: flex; justify-content: center; }
-        .hero-image img { 
-            width: 100%; max-width: 500px; border-radius: 20px; 
-            box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15);
-            object-fit: cover;
-        }
+        .hero-image img { width: 100%; max-width: 500px; border-radius: 20px; box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15); object-fit: cover; }
 
         /* --- SOBRE NÓS --- */
         .about-section { padding: 80px 0; background: white; }
@@ -157,43 +105,59 @@
         .icon-box svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 2; }
         .card h3 { font-size: 1.25rem; margin-bottom: 12px; }
 
+        /* --- NOVA SEÇÃO: MARCAS --- */
+        .brands-section { padding: 60px 0; background: white; border-top: 1px solid #F3F4F6; }
+        .brands-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+            gap: 40px; 
+            align-items: center; 
+            justify-items: center;
+            margin-top: 30px;
+        }
+        .brand-item {
+            width: 120px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        .brand-item:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
+        .brand-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
         /* --- GALERIA --- */
-        .gallery-section { padding: 80px 0; background: white; }
+        .gallery-section { padding: 80px 0; background: #F9FAFB; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px; }
-        .gallery-item { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #F1F5F9; }
+        .gallery-item { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #E5E7EB; }
         .gallery-img { width: 100%; height: 250px; object-fit: cover; display: block; }
         .gallery-info { padding: 20px; }
         .gallery-info h4 { margin-bottom: 5px; font-size: 1.1rem; }
         .gallery-info p { font-size: 0.9rem; }
 
         /* --- DIFERENCIAIS --- */
-        .features { padding: 80px 0; background: #F9FAFB; text-align: center; }
+        .features { padding: 80px 0; background: white; text-align: center; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px; }
         .feature-icon { width: 80px; height: 80px; background: #EFF6FF; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
         .feature-icon svg { width: 40px; height: 40px; stroke: currentColor; fill: none; stroke-width: 2; }
 
-        /* --- PROCESSO (LINHA AJUSTADA) --- */
-        .process { padding: 80px 0; background: white; text-align: center; }
+        /* --- PROCESSO --- */
+        .process { padding: 80px 0; background: #F9FAFB; text-align: center; }
         .process-grid { display: flex; justify-content: space-between; align-items: flex-start; margin-top: 60px; position: relative; flex-wrap: wrap; gap: 30px; }
-        
-        /* LINHA CORRIGIDA */
-        .process-line { 
-            position: absolute; 
-            top: 40px; 
-            left: 15%; 
-            right: 15%; 
-            border-top: 2px dashed #D1D5DB; 
-            z-index: 0; 
-            display: none; 
-        }
-        
+        .process-line { position: absolute; top: 40px; left: 15%; right: 15%; border-top: 2px dashed #D1D5DB; z-index: 0; display: none; }
         .process-item { position: relative; z-index: 1; flex: 1; min-width: 250px; }
         .process-icon { width: 80px; height: 80px; background: var(--primary); color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(15, 108, 189, 0.2); }
         .process-icon svg { width: 36px; height: 36px; fill: currentColor; }
         .step-label { color: var(--primary); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 8px; display: block; }
 
         /* --- DEPOIMENTOS --- */
-        .testimonials { padding: 80px 0; background: #F9FAFB; }
+        .testimonials { padding: 80px 0; background: white; }
 
         /* --- CONTATO --- */
         .contact-section { padding: 80px 0; background: #F8FAFC; }
@@ -252,9 +216,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#depoimentos">Avaliações</a>
-                <a href="https://wa.me/5515996736948" class="btn">
-                    Orçamento Grátis
-                </a>
+                <a href="https://wa.me/5515996736948" class="btn">Orçamento Grátis</a>
             </nav>
             <div class="mobile-menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -271,19 +233,15 @@
                     <p>Equipe especializada em climatização em Votorantim, Sorocaba e região. Atendimento rápido e garantia em todos os serviços.</p>
                     <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
                         <a href="https://wa.me/5515996736948" class="btn">
-                            Solicite um Orçamento 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            Solicite um Orçamento <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>
                         <a href="tel:15996736948" class="btn btn-outline">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            Ligue Agora
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Ligue Agora
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="./hero_ar.png" 
-                         alt="Ar Condicionado Split Moderno em Sala de Estar"
-                         loading="eager">
+                    <img src="./hero_ar.png" alt="Ar Condicionado Split Moderno" loading="eager">
                 </div>
             </div>
         </div>
@@ -335,6 +293,52 @@
                     <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22h20V2H2v20zM20 4v16H4V4h16z"/><path d="M12 7v5h5v2h-5v5H9v-5H4v-2h5V7z"/></svg></div>
                     <h3>Projetos</h3>
                     <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Trabalhamos com as Melhores Marcas</span>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item" title="LG">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/LG_logo_%282015%29.svg" alt="LG Logo">
+                </div>
+                <div class="brand-item" title="Samsung">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo">
+                </div>
+                <div class="brand-item" title="Midea">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Midea_Group_logo.svg" alt="Midea Logo">
+                </div>
+                <div class="brand-item" title="Fujitsu">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Fujitsu-Logo.svg" alt="Fujitsu Logo">
+                </div>
+                <div class="brand-item" title="Daikin">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Daikin_logo.svg" alt="Daikin Logo">
+                </div>
+                <div class="brand-item" title="Philips">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Philips_logo.svg" alt="Philips Logo">
+                </div>
+                <div class="brand-item" title="TCL">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/TCL_Technology_logo.svg" alt="TCL Logo">
+                </div>
+                <div class="brand-item" title="Gree">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Gree_electric_appliances_logo.svg" alt="Gree Logo">
+                </div>
+                <div class="brand-item" title="Elgin">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Elgin_logo.svg" alt="Elgin Logo">
+                </div>
+                <div class="brand-item" title="Philco">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Philco-logo.png" alt="Philco Logo">
+                </div>
+                <div class="brand-item" title="Consul">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Consul_Logo.svg" alt="Consul Logo">
+                </div>
+                <div class="brand-item" title="Comfee">
+                    <img src="https://placehold.co/150x50/ffffff/444444?text=Comfee" alt="Comfee Logo">
                 </div>
             </div>
         </div>
@@ -398,7 +402,6 @@
                 <h2>O que dizem nossos clientes</h2>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
-                
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -408,7 +411,6 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"A equipe da Votofrio resolveu os problemas e sempre me atendem com profissionalismo. Recomendo muito."</p>
                 </div>
-                
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -418,7 +420,6 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"Tudo muito organizado e bem feito. Preço justo. Recomendo! 👏🏼👏🏼👏🏼👏🏼👏🏼"</p>
                 </div>
-
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -428,13 +429,9 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"Preço justo (melhor preço da região) Serviço completo, fizeram um bom trabalho no meu apartamento"</p>
                 </div>
-
             </div>
-            
             <div class="text-center" style="margin-top: 40px;">
-                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn" style="background: white; color: #4285F4 !important; border: 1px solid #E5E7EB; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    Ver todas as avaliações no Google
-                </a>
+                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn" style="background: white; color: #4285F4 !important; border: 1px solid #E5E7EB; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Ver todas as avaliações no Google</a>
             </div>
         </div>
     </section>
