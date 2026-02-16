@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     
     <title>Votofrio | Ar Condicionado em Sorocaba, Votorantim e Região</title>
-    <meta name="description" content="Especialistas em venda, instalação, manutenção e limpeza de ar condicionado. Atendimento rápido em Sorocaba, Votorantim e região.">
-    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção, lg, samsung, midea, fujitsu, gree, elgin, consul">
+    <meta name="description" content="Especialistas em venda, instalação, manutenção e limpeza de ar condicionado. Atendimento rápido em Sorocaba (Campolim, Zona Norte...), Votorantim e região.">
+    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção ar condicionado, limpeza de ar condicionado, comprar ar condicionado, inverter, samsung, lg, springer, elgin, campolim, wanel ville">
     <meta name="robots" content="index, follow">
     <meta name="author" content="GTI Desenvolvimento">
     
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Votorantim">
+    <meta name="geo.position" content="-23.5388;-47.4439">
+    <meta name="ICBM" content="-23.5388, -47.4439">
+
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Votofrio - Especialistas em Ar Condicionado">
@@ -31,7 +37,13 @@
         "addressLocality": "Votorantim",
         "addressRegion": "SP",
         "addressCountry": "BR"
-      }
+      },
+      "url": "https://votofrio.com.br",
+      "priceRange": "$$",
+      "areaServed": [
+        {"@type": "City", "name": "Votorantim"},
+        {"@type": "City", "name": "Sorocaba"}
+      ]
     }
     </script>
 
@@ -39,7 +51,7 @@
     <link rel="icon" type="image/png" href="./logo.png">
 
     <style>
-        /* --- GERAIS --- */
+        /* --- CONFIGURAÇÕES GERAIS --- */
         :root {
             --primary: #0F6CBD;
             --primary-hover: #0C5AA3;
@@ -52,19 +64,47 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
         body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+        
         a { text-decoration: none; }
         ul { list-style: none; }
+        
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .text-center { text-align: center; }
+        
         h1, h2, h3 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5px; }
         p { color: var(--text-light); font-size: 1.05rem; }
-        .section-label { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 12px; display: block; }
+
+        .section-label {
+            color: var(--primary); font-weight: 600; text-transform: uppercase;
+            font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 12px; display: block;
+        }
 
         /* --- BOTÕES --- */
-        .btn { display: inline-flex; align-items: center; justify-content: center; background-color: var(--primary); color: #FFFFFF !important; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: 0.3s; border: none; cursor: pointer; gap: 10px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary);
+            color: #FFFFFF !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            gap: 10px;
+        }
         .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
-        .btn-outline { background: transparent; border: 1px solid #E5E7EB; color: var(--text-main) !important; margin-left: 10px; }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #E5E7EB;
+            color: var(--text-main) !important;
+            margin-left: 10px;
+        }
         .btn-outline:hover { background: #F3F4F6; }
 
         /* --- HEADER --- */
@@ -84,8 +124,13 @@
         .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px; }
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; }
+        
         .hero-image { flex: 1; min-width: 300px; display: flex; justify-content: center; }
-        .hero-image img { width: 100%; max-width: 500px; border-radius: 20px; box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15); object-fit: cover; }
+        .hero-image img { 
+            width: 100%; max-width: 500px; border-radius: 20px; 
+            box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15);
+            object-fit: cover;
+        }
 
         /* --- SOBRE NÓS --- */
         .about-section { padding: 80px 0; background: white; }
@@ -105,7 +150,7 @@
         .icon-box svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 2; }
         .card h3 { font-size: 1.25rem; margin-bottom: 12px; }
 
-        /* --- NOVA SEÇÃO: MARCAS --- */
+        /* --- MARCAS (CORRIGIDO) --- */
         .brands-section { padding: 60px 0; background: white; border-top: 1px solid #F3F4F6; }
         .brands-grid { 
             display: grid; 
@@ -117,7 +162,7 @@
         }
         .brand-item {
             width: 120px;
-            height: 60px;
+            height: 80px; /* Altura maior para acomodar logos quadrados */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,7 +173,7 @@
         .brand-item:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
         .brand-item img {
             max-width: 100%;
-            max-height: 100%;
+            max-height: 50px; /* Altura máxima controlada */
             object-fit: contain;
         }
 
@@ -304,42 +349,18 @@
                 <span class="section-label">Trabalhamos com as Melhores Marcas</span>
             </div>
             <div class="brands-grid">
-                <div class="brand-item" title="LG">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/LG_logo_%282015%29.svg" alt="LG Logo">
-                </div>
-                <div class="brand-item" title="Samsung">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo">
-                </div>
-                <div class="brand-item" title="Midea">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Midea_Group_logo.svg" alt="Midea Logo">
-                </div>
-                <div class="brand-item" title="Fujitsu">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Fujitsu-Logo.svg" alt="Fujitsu Logo">
-                </div>
-                <div class="brand-item" title="Daikin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Daikin_logo.svg" alt="Daikin Logo">
-                </div>
-                <div class="brand-item" title="Philips">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Philips_logo.svg" alt="Philips Logo">
-                </div>
-                <div class="brand-item" title="TCL">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/TCL_Technology_logo.svg" alt="TCL Logo">
-                </div>
-                <div class="brand-item" title="Gree">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Gree_electric_appliances_logo.svg" alt="Gree Logo">
-                </div>
-                <div class="brand-item" title="Elgin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Elgin_logo.svg" alt="Elgin Logo">
-                </div>
-                <div class="brand-item" title="Philco">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Philco-logo.png" alt="Philco Logo">
-                </div>
-                <div class="brand-item" title="Consul">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Consul_Logo.svg" alt="Consul Logo">
-                </div>
-                <div class="brand-item" title="Comfee">
-                    <img src="https://placehold.co/150x50/ffffff/444444?text=Comfee" alt="Comfee Logo">
-                </div>
+                <div class="brand-item" title="LG"><img src="https://logo.clearbit.com/lg.com" alt="LG"></div>
+                <div class="brand-item" title="Samsung"><img src="https://logo.clearbit.com/samsung.com" alt="Samsung"></div>
+                <div class="brand-item" title="Midea"><img src="https://logo.clearbit.com/midea.com" alt="Midea"></div>
+                <div class="brand-item" title="Fujitsu"><img src="https://logo.clearbit.com/fujitsu.com" alt="Fujitsu"></div>
+                <div class="brand-item" title="Daikin"><img src="https://logo.clearbit.com/daikin.com" alt="Daikin"></div>
+                <div class="brand-item" title="Philips"><img src="https://logo.clearbit.com/philips.com" alt="Philips"></div>
+                <div class="brand-item" title="TCL"><img src="https://logo.clearbit.com/tcl.com" alt="TCL"></div>
+                <div class="brand-item" title="Gree"><img src="https://logo.clearbit.com/gree.com.br" alt="Gree"></div>
+                <div class="brand-item" title="Elgin"><img src="https://logo.clearbit.com/elgin.com.br" alt="Elgin"></div>
+                <div class="brand-item" title="Philco"><img src="https://logo.clearbit.com/philco.com.br" alt="Philco"></div>
+                <div class="brand-item" title="Consul"><img src="https://logo.clearbit.com/consul.com.br" alt="Consul"></div>
+                <div class="brand-item" title="Comfee"><img src="https://logo.clearbit.com/comfee.eu" alt="Comfee"></div>
             </div>
         </div>
     </section>
