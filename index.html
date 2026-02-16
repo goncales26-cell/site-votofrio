@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Votofrio | Venda, Instalação e Manutenção de Ar Condicionado</title>
-    <meta name="description" content="Empresa especializada na venda, instalação e manutenção de ar condicionado em Votorantim e região. Projetos residenciais e comerciais com materiais de qualidade.">
-    <meta name="keywords" content="ar condicionado, venda de ar condicionado, instalação, manutenção, projetos de climatização, Votorantim, Sorocaba, Votofrio">
+    <title>Votofrio | Ar Condicionado em Sorocaba, Votorantim e Região</title>
+    <meta name="description" content="Venda, instalação, manutenção e limpeza de ar condicionado. Atendemos Sorocaba (Campolim, Zona Norte, Sul...), Votorantim e toda região. Orçamento grátis!">
+    <meta name="keywords" content="ar condicionado sorocaba, ar condicionado votorantim, instalação split, manutenção ar condicionado, limpeza de ar condicionado, comprar ar condicionado, inverter, samsung, lg, springer, elgin, campolim, wanel ville, vila hortência">
     <meta name="robots" content="index, follow">
     
     <meta name="geo.region" content="BR-SP">
-    <meta name="geo.placename" content="Votorantim">
-    <meta name="geo.position" content="-23.5388;-47.4439">
-    <meta name="ICBM" content="-23.5388, -47.4439">
+    <meta name="geo.placename" content="Sorocaba">
+    <meta name="geo.position" content="-23.5015;-47.4521">
+    <meta name="ICBM" content="-23.5015, -47.4521">
 
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Votofrio - Especialistas em Ar Condicionado">
-    <meta property="og:description" content="Venda, instalação e manutenção de ar condicionado com transparência e qualidade.">
+    <meta property="og:description" content="Venda, instalação e manutenção de ar condicionado com transparência e qualidade em Sorocaba e Votorantim.">
     <meta property="og:url" content="https://votofrio.com.br/">
     <meta property="og:site_name" content="Votofrio">
     <meta property="og:image" content="./antes_depois_03.png">
@@ -40,7 +40,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         
-        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
         
         a { text-decoration: none; }
         ul { list-style: none; }
@@ -82,108 +82,83 @@
         }
         .btn-outline:hover { background: #F3F4F6; }
 
-        /* --- 2. HEADER --- */
-        header { 
-            background: white; 
-            padding: 15px 0; 
-            position: sticky; top: 0; z-index: 100; 
-            box-shadow: 0 2px 15px rgba(0,0,0,0.03); 
-        }
+        /* --- HEADER --- */
+        header { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 15px rgba(0,0,0,0.03); }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
         .logo img { height: 70px; width: auto; border-radius: 8px; }
-
         .nav-menu { display: flex; gap: 30px; align-items: center; }
         .nav-menu a { color: var(--text-light); font-weight: 500; font-size: 1rem; transition: 0.3s; }
         .nav-menu a:hover { color: var(--primary); }
         .mobile-menu-btn { display: none; cursor: pointer; color: var(--text-main); }
 
-        /* --- 3. HERO --- */
+        /* --- HERO --- */
         .hero { padding: 100px 0; background: radial-gradient(circle at top right, #EFF6FF 0%, #FFFFFF 60%); }
         .hero-content { max-width: 700px; }
-        .hero-tag {
-            background: #EBF5FF; color: var(--primary); padding: 6px 16px;
-            border-radius: 50px; font-size: 0.85rem; font-weight: 600;
-            display: inline-block; margin-bottom: 24px;
-        }
+        .hero-tag { background: #EBF5FF; color: var(--primary); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 24px; }
         .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px; }
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; }
 
-        /* --- 3.5 SOBRE NÓS (NOVO) --- */
+        /* --- SOBRE NÓS --- */
         .about-section { padding: 80px 0; background: white; }
         .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
         .about-text { font-size: 1.1rem; line-height: 1.8; color: #4B5563; }
         .about-highlight { color: var(--primary); font-weight: 600; }
 
-        /* --- 4. SERVIÇOS --- */
+        /* --- SERVIÇOS --- */
         .services { padding: 80px 0; background: #F9FAFB; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        
-        .card {
-            background: white; padding: 40px 30px; border-radius: var(--radius);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02); border: 1px solid #F3F4F6;
-            text-align: center; transition: 0.3s;
-        }
+        .card { background: white; padding: 40px 30px; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0,0,0,0.02); border: 1px solid #F3F4F6; text-align: center; transition: 0.3s; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
-        .icon-box {
-            width: 60px; height: 60px; background: #EFF6FF; color: var(--primary);
-            border-radius: 16px; display: flex; align-items: center; justify-content: center;
-            margin: 0 auto 24px;
-        }
+        .icon-box { width: 60px; height: 60px; background: #EFF6FF; color: var(--primary); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
         .icon-box svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 2; }
         .card h3 { font-size: 1.25rem; margin-bottom: 12px; }
 
-        /* --- 5. GALERIA ANTES E DEPOIS --- */
+        /* --- GALERIA --- */
         .gallery-section { padding: 80px 0; background: white; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px; }
-        .gallery-item { 
-            background: white; border-radius: var(--radius); overflow: hidden; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #F1F5F9;
-        }
+        .gallery-item { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #F1F5F9; }
         .gallery-img { width: 100%; height: 250px; object-fit: cover; display: block; }
         .gallery-info { padding: 20px; }
         .gallery-info h4 { margin-bottom: 5px; font-size: 1.1rem; }
         .gallery-info p { font-size: 0.9rem; }
 
-        /* --- 6. DIFERENCIAIS --- */
+        /* --- DIFERENCIAIS --- */
         .features { padding: 80px 0; background: #F9FAFB; text-align: center; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px; }
-        .feature-icon {
-            width: 80px; height: 80px; background: #EFF6FF; color: var(--primary);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;
-        }
+        .feature-icon { width: 80px; height: 80px; background: #EFF6FF; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
         .feature-icon svg { width: 40px; height: 40px; stroke: currentColor; fill: none; stroke-width: 2; }
 
-        /* --- 7. PROCESSO --- */
+        /* --- PROCESSO --- */
         .process { padding: 80px 0; background: white; text-align: center; }
         .process-grid { display: flex; justify-content: space-between; align-items: flex-start; margin-top: 60px; position: relative; flex-wrap: wrap; gap: 30px; }
         .process-line { position: absolute; top: 40px; left: 10%; right: 10%; border-top: 2px dashed #D1D5DB; z-index: 0; display: none; }
         .process-item { position: relative; z-index: 1; flex: 1; min-width: 250px; }
-        .process-icon {
-            width: 80px; height: 80px; background: var(--primary); color: white;
-            border-radius: 16px; display: flex; align-items: center; justify-content: center;
-            margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(15, 108, 189, 0.2);
-        }
+        .process-icon { width: 80px; height: 80px; background: var(--primary); color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(15, 108, 189, 0.2); }
         .process-icon svg { width: 36px; height: 36px; fill: currentColor; }
         .step-label { color: var(--primary); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 8px; display: block; }
 
-        /* --- 8. DEPOIMENTOS --- */
+        /* --- DEPOIMENTOS --- */
         .testimonials { padding: 80px 0; background: #F9FAFB; }
 
-        /* --- 9. CONTATO --- */
+        /* --- CONTATO --- */
         .contact-section { padding: 80px 0; background: #F8FAFC; }
         .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center; }
         .form-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #1E293B; }
-        .form-input { 
-            width: 100%; padding: 14px; border: 1px solid #E2E8F0; 
-            border-radius: 8px; background: #F8FAFC; outline: none; transition: 0.3s;
-        }
+        .form-input { width: 100%; padding: 14px; border: 1px solid #E2E8F0; border-radius: 8px; background: #F8FAFC; outline: none; transition: 0.3s; }
         .form-input:focus { border-color: var(--primary); background: white; }
 
-        /* --- 10. FOOTER --- */
-        footer { background: #111827; color: #D1D5DB; padding: 60px 0 30px; }
+        /* --- SEO SECTION (Estilo discreto para palavras-chave) --- */
+        .seo-footer { background: #1F2937; padding: 60px 0 20px; color: #9CA3AF; border-bottom: 1px solid #374151; }
+        .seo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+        .seo-col h5 { color: white; font-size: 1rem; margin-bottom: 15px; font-weight: 600; }
+        .seo-list { font-size: 0.85rem; line-height: 1.6; list-style: none; padding: 0; }
+        .seo-list li { margin-bottom: 6px; }
+
+        /* --- FOOTER --- */
+        footer { background: #111827; color: #D1D5DB; padding: 40px 0 30px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
         .footer-logo { color: white; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; display: block; }
         .social-label { color: white; font-weight: 600; margin-bottom: 10px; display: block; font-size: 0.95rem; }
@@ -228,9 +203,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#depoimentos">Avaliações</a>
-                <a href="https://wa.me/5515996736948" class="btn">
-                    Orçamento Grátis
-                </a>
+                <a href="https://wa.me/5515996736948" class="btn">Orçamento Grátis</a>
             </nav>
             <div class="mobile-menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -283,32 +256,24 @@
             </div>
             <div class="cards-grid">
                 <div class="card">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2C6.47 4 4 6.47 4 12s2.47 8 8 8 8-2.47 8-8-2.47-8-8-8m0 5a1 1 0 0 1 1 1v4h2a1 1 0 0 1 0 2h-3a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1"/></svg>
-                    </div>
+                    <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2C6.47 4 4 6.47 4 12s2.47 8 8 8 8-2.47 8-8-2.47-8-8-8m0 5a1 1 0 0 1 1 1v4h2a1 1 0 0 1 0 2h-3a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1"/></svg></div>
                     <h3>Venda de Ar Condicionado</h3>
-                    <p>Trabalhamos com as melhores marcas do mercado para garantir qualidade e durabilidade.</p>
+                    <p>Trabalhamos com as melhores marcas: Samsung, LG, Springer, Elgin e Daikin.</p>
                 </div>
                 <div class="card">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.08a2 2 0 0 1 1 1.73v.51a2 2 0 0 1-1 1.73l-.15.08a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73v.18a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.73v-.51a2 2 0 0 1 1-1.73l.15-.08a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-                    </div>
+                    <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.08a2 2 0 0 1 1 1.73v.51a2 2 0 0 1-1 1.73l-.15.08a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73v.18a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.73v-.51a2 2 0 0 1 1-1.73l.15-.08a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
                     <h3>Instalação</h3>
                     <p>Instalação profissional de splits e sistemas centrais seguindo as normas técnicas.</p>
                 </div>
                 <div class="card">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-                    </div>
+                    <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
                     <h3>Manutenção</h3>
                     <p>Preventiva, corretiva e higienização para manter seu ar puro e eficiente.</p>
                 </div>
                 <div class="card">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22h20V2H2v20zM20 4v16H4V4h16z"/><path d="M12 7v5h5v2h-5v5H9v-5H4v-2h5V7z"/></svg>
-                    </div>
+                    <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22h20V2H2v20zM20 4v16H4V4h16z"/><path d="M12 7v5h5v2h-5v5H9v-5H4v-2h5V7z"/></svg></div>
                     <h3>Projetos</h3>
-                    <p>Projetos personalizados para residências e comércios, focando em conforto e economia.</p>
+                    <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
                 </div>
             </div>
         </div>
@@ -321,28 +286,18 @@
                 <h2>Nosso Trabalho em Detalhes</h2>
                 <p>Veja a diferença que uma manutenção profissional faz.</p>
             </div>
-            
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="./antes_depois_01.png" alt="Antes e Depois Votofrio" class="gallery-img">
-                    <div class="gallery-info">
-                        <h4>Higienização Completa</h4>
-                        <p>Remoção de fungos e sujeira acumulada.</p>
-                    </div>
+                    <img src="./antes_depois_01.png" alt="Higienização de Ar Condicionado" class="gallery-img">
+                    <div class="gallery-info"><h4>Higienização Completa</h4><p>Remoção de fungos e sujeira acumulada.</p></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./antes_depois_02.png" alt="Antes e Depois Votofrio" class="gallery-img">
-                    <div class="gallery-info">
-                        <h4>Manutenção Preventiva</h4>
-                        <p>Aumenta a vida útil e reduz o consumo de energia.</p>
-                    </div>
+                    <img src="./antes_depois_02.png" alt="Manutenção Preventiva" class="gallery-img">
+                    <div class="gallery-info"><h4>Manutenção Preventiva</h4><p>Aumenta a vida útil e reduz consumo.</p></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./antes_depois_03.png" alt="Antes e Depois Votofrio" class="gallery-img">
-                    <div class="gallery-info">
-                        <h4>Instalação Padrão</h4>
-                        <p>Acabamento impecável respeitando as normas.</p>
-                    </div>
+                    <img src="./antes_depois_03.png" alt="Instalação de Ar Condicionado" class="gallery-img">
+                    <div class="gallery-info"><h4>Instalação Padrão</h4><p>Acabamento impecável e normas técnicas.</p></div>
                 </div>
             </div>
         </div>
@@ -355,30 +310,10 @@
                 <h2>Por que a Votofrio?</h2>
             </div>
             <div class="features-grid">
-                <div>
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h3>Técnicos Certificados</h3>
-                </div>
-                <div>
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Atendimento Rápido</h3>
-                </div>
-                <div>
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    </div>
-                    <h3>Garantia Total</h3>
-                </div>
-                <div>
-                    <div class="feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
-                    </div>
-                    <h3>Orçamento Transparente</h3>
-                </div>
+                <div><div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Técnicos Certificados</h3></div>
+                <div><div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Atendimento Rápido</h3></div>
+                <div><div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Garantia Total</h3></div>
+                <div><div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg></div><h3>Orçamento Transparente</h3></div>
             </div>
         </div>
     </section>
@@ -388,27 +323,9 @@
             <div class="section-header"><h2>Como funciona</h2></div>
             <div class="process-grid">
                 <div class="process-line"></div>
-                <div class="process-item">
-                    <div class="process-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14.25v4.5A2.25 2.25 0 0 1 17.75 21H6.25A2.25 2.25 0 0 1 4 18.75V5.25A2.25 2.25 0 0 1 6.25 3h10.5a.75.75 0 0 1 .53.22l4.5 4.5a.75.75 0 0 1 .22.53v6zM13 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2-5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
-                    </div>
-                    <span class="step-label">Passo 01</span>
-                    <h3>Orçamento</h3>
-                </div>
-                <div class="process-item">
-                    <div class="process-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2a1 1 0 1 0-2 0v2H8V2a1 1 0 1 0-2 0v2H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16v7zm0-9H4V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3z M7.71 14.29a1 1 0 0 1 1.41 0L11 16.17l3.88-3.88a1 1 0 1 1 1.41 1.41l-4.59 4.59a1 1 0 0 1-1.41 0l-2.59-2.59a1 1 0 0 1 0-1.41z"/></svg>
-                    </div>
-                    <span class="step-label">Passo 02</span>
-                    <h3>Agendamento</h3>
-                </div>
-                <div class="process-item">
-                    <div class="process-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.5 8.5a3 3 0 0 0-3-3h-3.7l.94-2.91a2.1 2.1 0 0 0-2-2.79c-1.44 0-2.68 1.25-3 2.69L9.23 8.5H5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h12.68a3 3 0 0 0 2.85-1.91l1.86-5.58a3 3 0 0 0-1.89-3.5z"/></svg>
-                    </div>
-                    <span class="step-label">Passo 03</span>
-                    <h3>Execução</h3>
-                </div>
+                <div class="process-item"><div class="process-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14.25v4.5A2.25 2.25 0 0 1 17.75 21H6.25A2.25 2.25 0 0 1 4 18.75V5.25A2.25 2.25 0 0 1 6.25 3h10.5a.75.75 0 0 1 .53.22l4.5 4.5a.75.75 0 0 1 .22.53v6zM13 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2-5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-4-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></div><span class="step-label">Passo 01</span><h3>Orçamento</h3></div>
+                <div class="process-item"><div class="process-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2a1 1 0 1 0-2 0v2H8V2a1 1 0 1 0-2 0v2H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16v7zm0-9H4V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3z M7.71 14.29a1 1 0 0 1 1.41 0L11 16.17l3.88-3.88a1 1 0 1 1 1.41 1.41l-4.59 4.59a1 1 0 0 1-1.41 0l-2.59-2.59a1 1 0 0 1 0-1.41z"/></svg></div><span class="step-label">Passo 02</span><h3>Agendamento</h3></div>
+                <div class="process-item"><div class="process-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.5 8.5a3 3 0 0 0-3-3h-3.7l.94-2.91a2.1 2.1 0 0 0-2-2.79c-1.44 0-2.68 1.25-3 2.69L9.23 8.5H5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h12.68a3 3 0 0 0 2.85-1.91l1.86-5.58a3 3 0 0 0-1.89-3.5z"/></svg></div><span class="step-label">Passo 03</span><h3>Execução</h3></div>
             </div>
         </div>
     </section>
@@ -420,7 +337,6 @@
                 <h2>O que dizem nossos clientes</h2>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
-                
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -430,7 +346,6 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"A equipe da Votofrio resolveu os problemas e sempre me atendem com profissionalismo. Recomendo muito."</p>
                 </div>
-                
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -440,7 +355,6 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"Tudo muito organizado e bem feito. Preço justo. Recomendo! 👏🏼👏🏼👏🏼👏🏼👏🏼"</p>
                 </div>
-
                 <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative;">
                     <svg style="position: absolute; top: 24px; right: 24px; width: 24px; height: 24px;" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
@@ -450,13 +364,9 @@
                     <div style="color: #FBBF24; margin-bottom: 12px;">★★★★★</div>
                     <p style="color: #4B5563; font-size: 0.95rem;">"Preço justo (melhor preço da região) Serviço completo, fizeram um bom trabalho no meu apartamento"</p>
                 </div>
-
             </div>
-            
             <div class="text-center" style="margin-top: 40px;">
-                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn" style="background: white; color: #4285F4 !important; border: 1px solid #E5E7EB; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    Ver todas as avaliações no Google
-                </a>
+                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn" style="background: white; color: #4285F4 !important; border: 1px solid #E5E7EB; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Ver todas as avaliações no Google</a>
             </div>
         </div>
     </section>
@@ -464,73 +374,91 @@
     <section class="contact-section" id="contato">
         <div class="container">
             <div class="contact-wrapper">
-                
                 <div class="contact-info">
                     <span class="section-label">Fale Conosco</span>
-                    <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 20px;">Pronto para ter mais conforto térmico?</h2>
-                    <p style="font-size: 1.1rem; color: #64748B; margin-bottom: 30px;">
-                        Não sofra mais com o calor. Nossa equipe está pronta para te atender com agilidade e preço justo.
-                    </p>
-                    
+                    <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 20px;">Pronto para ter mais conforto?</h2>
+                    <p style="font-size: 1.1rem; color: #64748B; margin-bottom: 30px;">Não sofra mais com o calor. Nossa equipe está pronta para te atender com agilidade e preço justo.</p>
                     <div style="display: flex; flex-direction: column; gap: 20px;">
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 50px; height: 50px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             </div>
-                            <div>
-                                <h4 style="margin: 0; font-size: 1rem; color: #1E293B;">WhatsApp e Telefone</h4>
-                                <span style="color: #64748B;">(15) 99673-6948</span>
-                            </div>
+                            <div><h4 style="margin: 0; font-size: 1rem; color: #1E293B;">WhatsApp e Telefone</h4><span style="color: #64748B;">(15) 99673-6948</span></div>
                         </div>
-
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 50px; height: 50px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                             </div>
-                            <div>
-                                <h4 style="margin: 0; font-size: 1rem; color: #1E293B;">E-mail</h4>
-                                <span style="color: #64748B;">contato@votofrio.com.br</span>
-                            </div>
+                            <div><h4 style="margin: 0; font-size: 1rem; color: #1E293B;">E-mail</h4><span style="color: #64748B;">contato@votofrio.com.br</span></div>
                         </div>
-
                         <div style="display: flex; align-items: center; gap: 15px;">
                             <div style="width: 50px; height: 50px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                             </div>
-                            <div>
-                                <h4 style="margin: 0; font-size: 1rem; color: #1E293B;">Atendimento</h4>
-                                <span style="color: #64748B;">Votorantim, Sorocaba e Região</span>
-                            </div>
+                            <div><h4 style="margin: 0; font-size: 1rem; color: #1E293B;">Atendimento</h4><span style="color: #64748B;">Votorantim, Sorocaba e Região</span></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: #1E293B;">Solicite seu orçamento</h3>
                     <form id="contactForm">
-                        <div class="form-group">
-                            <label>Nome Completo</label>
-                            <input type="text" id="nome" class="form-input" placeholder="Ex: João Silva" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Telefone / WhatsApp</label>
-                            <input type="tel" id="telefone" class="form-input" placeholder="(15) 99999-9999" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Como podemos ajudar?</label>
-                            <textarea id="mensagem" rows="4" class="form-input" placeholder="Descreva brevemente o serviço..."></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%; font-size: 1rem; padding: 16px;">
-                            Enviar via WhatsApp
+                        <div class="form-group"><label>Nome Completo</label><input type="text" id="nome" class="form-input" placeholder="Ex: João Silva" required></div>
+                        <div class="form-group"><label>Telefone / WhatsApp</label><input type="tel" id="telefone" class="form-input" placeholder="(15) 99999-9999" required></div>
+                        <div class="form-group"><label>Como podemos ajudar?</label><textarea id="mensagem" rows="4" class="form-input" placeholder="Descreva brevemente o serviço..."></textarea></div>
+                        <button type="submit" class="btn" style="width: 100%; font-size: 1rem; padding: 16px;">Enviar via WhatsApp
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                         </button>
-                        <p style="text-align: center; font-size: 0.85rem; color: #94A3B8; margin-top: 15px;">
-                            <span style="display: inline-block; width: 8px; height: 8px; background: #22C55E; border-radius: 50%; margin-right: 5px;"></span>
-                            Respondemos em poucos minutos
-                        </p>
+                        <p style="text-align: center; font-size: 0.85rem; color: #94A3B8; margin-top: 15px;"><span style="display: inline-block; width: 8px; height: 8px; background: #22C55E; border-radius: 50%; margin-right: 5px;"></span>Respondemos em poucos minutos</p>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="seo-footer">
+        <div class="container">
+            <div class="seo-grid">
+                <div class="seo-col">
+                    <h5>Nossos Serviços</h5>
+                    <ul class="seo-list">
+                        <li>Venda de Ar Condicionado</li>
+                        <li>Instalação de Ar Condicionado Split</li>
+                        <li>Manutenção Preventiva e Corretiva</li>
+                        <li>Limpeza e Higienização Técnica</li>
+                        <li>Projetos Residenciais e Comerciais</li>
+                        <li>Conserto de Ar Condicionado</li>
+                    </ul>
+                </div>
+                <div class="seo-col">
+                    <h5>Atendimento em Sorocaba</h5>
+                    <ul class="seo-list">
+                        <li>Zona Sul (Campolim, Jd. dos Estados)</li>
+                        <li>Zona Norte (Jd. Santa Luiza, Pq. São Bento)</li>
+                        <li>Zona Oeste (Wanel Ville, Central Parque)</li>
+                        <li>Zona Leste (Vila Hortência, Barcelona)</li>
+                        <li>Centro (Santa Rosália, Vila Santana)</li>
+                    </ul>
+                </div>
+                <div class="seo-col">
+                    <h5>Atendimento Votorantim e Região</h5>
+                    <ul class="seo-list">
+                        <li>Votorantim (Pq. Bela Vista, Vossoroca)</li>
+                        <li>Vila Nova Votorantim, Jd. Serrano</li>
+                        <li>Atendemos também: Itu, Salto de Pirapora</li>
+                        <li>Piedade, Araçoiaba da Serra, Iperó</li>
+                        <li>Boituva e Porto Feliz</li>
+                    </ul>
+                </div>
+                <div class="seo-col">
+                    <h5>Marcas e Modelos</h5>
+                    <ul class="seo-list">
+                        <li>Ar Condicionado Inverter e Convencional</li>
+                        <li>Samsung, LG, Springer Midea</li>
+                        <li>Daikin, Elgin, Fujitsu, Gree</li>
+                        <li>Modelos 9000, 12000, 18000 BTUs</li>
+                        <li>Economia de energia e conforto térmico</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -541,51 +469,20 @@
                 <div>
                     <span class="footer-logo">Votofrio</span>
                     <p style="color: #9CA3AF; font-size: 0.9rem; margin-bottom: 15px;">Climatização profissional com qualidade e confiança.</p>
-                    
-                    <span class="social-label">Siga-nos nas redes sociais:</span>
+                    <span class="social-label">Siga-nos:</span>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/votofrio_arcondicionado/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
-                        <a href="https://www.facebook.com/votofrio.arcondi" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
+                        <a href="https://www.instagram.com/votofrio_arcondicionado/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="https://www.facebook.com/votofrio.arcondi" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
                     </div>
                 </div>
-                <div>
-                    <h4 style="color: white; margin-bottom: 20px;">Links Rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#diferenciais">Diferenciais</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: white; margin-bottom: 20px;">Contato</h4>
-                    <ul class="footer-links">
-                        <li style="display: flex; align-items: center; gap: 10px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            (15) 99673-6948
-                        </li>
-                        <li style="display: flex; align-items: center; gap: 10px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            contato@votofrio.com.br
-                        </li>
-                    </ul>
-                </div>
+                <div><h4>Links Rápidos</h4><ul class="footer-links"><li><a href="#servicos">Serviços</a></li><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#depoimentos">Depoimentos</a></li><li><a href="#contato">Contato</a></li></ul></div>
+                <div><h4>Contato</h4><ul class="footer-links"><li>(15) 99673-6948</li><li>contato@votofrio.com.br</li></ul></div>
             </div>
-            
-            <div class="copyright">
-                © 2026 Votofrio. Todos os direitos reservados.
-                <span class="developer-credit">Desenvolvido por <strong>GTI</strong></span>
-            </div>
+            <div class="copyright">© 2026 Votofrio. Todos os direitos reservados. <span class="developer-credit">Desenvolvido por <strong>GTI</strong></span></div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5515996736948" class="whatsapp-float" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-    </a>
+    <a href="https://wa.me/5515996736948" class="whatsapp-float" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -593,7 +490,6 @@
             const text = `*Olá! Vim pelo site.*%0A*Nome:* ${document.getElementById('nome').value}%0A*Mensagem:* ${document.getElementById('mensagem').value}`;
             window.open(`https://wa.me/5515996736948?text=${text}`, '_blank');
         });
-        
         const menuBtn = document.querySelector('.mobile-menu-btn');
         const navMenu = document.querySelector('.nav-menu');
         menuBtn.addEventListener('click', () => {
