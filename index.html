@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Votofrio | Instalação e Manutenção de Ar Condicionado em Votorantim e Sorocaba</title>
-    <meta name="description" content="Especialistas em instalação, manutenção preventiva, limpeza e higienização de ar condicionado split. Atendimento rápido em Votorantim, Sorocaba e região. Solicite orçamento!">
-    <meta name="keywords" content="ar condicionado, instalação de ar condicionado, manutenção ar condicionado, limpeza de ar condicionado, higienização, técnico ar condicionado, Votorantim, Sorocaba, Votofrio, climatização, infraestrutura, split, inverter">
+    <title>Votofrio | Venda, Instalação e Manutenção de Ar Condicionado</title>
+    <meta name="description" content="Empresa especializada na venda, instalação e manutenção de ar condicionado em Votorantim e região. Projetos residenciais e comerciais com materiais de qualidade.">
+    <meta name="keywords" content="ar condicionado, venda de ar condicionado, instalação, manutenção, projetos de climatização, Votorantim, Sorocaba, Votofrio">
     <meta name="robots" content="index, follow">
     
     <meta name="geo.region" content="BR-SP">
@@ -17,7 +17,7 @@
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Votofrio - Especialistas em Ar Condicionado">
-    <meta property="og:description" content="Instalação e manutenção profissional em Votorantim e Sorocaba. Deixe seu ambiente climatizado com quem entende.">
+    <meta property="og:description" content="Venda, instalação e manutenção de ar condicionado com transparência e qualidade.">
     <meta property="og:url" content="https://votofrio.com.br/">
     <meta property="og:site_name" content="Votofrio">
     <meta property="og:image" content="./antes_depois_03.png">
@@ -40,7 +40,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         
-        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
         
         a { text-decoration: none; }
         ul { list-style: none; }
@@ -109,10 +109,14 @@
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 600px; }
 
+        /* --- 3.5 SOBRE NÓS (NOVO) --- */
+        .about-section { padding: 80px 0; background: white; }
+        .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
+        .about-text { font-size: 1.1rem; line-height: 1.8; color: #4B5563; }
+        .about-highlight { color: var(--primary); font-weight: 600; }
+
         /* --- 4. SERVIÇOS --- */
         .services { padding: 80px 0; background: #F9FAFB; }
-        .section-header { text-align: center; margin-bottom: 60px; }
-        .section-header h2 { font-size: 2.2rem; margin-top: 10px; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
         
         .card {
@@ -133,11 +137,8 @@
         .gallery-section { padding: 80px 0; background: white; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px; }
         .gallery-item { 
-            background: white; 
-            border-radius: var(--radius); 
-            overflow: hidden; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border: 1px solid #F1F5F9;
+            background: white; border-radius: var(--radius); overflow: hidden; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #F1F5F9;
         }
         .gallery-img { width: 100%; height: 250px; object-fit: cover; display: block; }
         .gallery-info { padding: 20px; }
@@ -169,10 +170,9 @@
         /* --- 8. DEPOIMENTOS --- */
         .testimonials { padding: 80px 0; background: #F9FAFB; }
 
-        /* --- 9. CONTATO (NOVO LAYOUT) --- */
+        /* --- 9. CONTATO --- */
         .contact-section { padding: 80px 0; background: #F8FAFC; }
         .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center; }
-        
         .form-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #1E293B; }
@@ -186,18 +186,15 @@
         footer { background: #111827; color: #D1D5DB; padding: 60px 0 30px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
         .footer-logo { color: white; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; display: block; }
-        
         .social-label { color: white; font-weight: 600; margin-bottom: 10px; display: block; font-size: 0.95rem; }
         .social-icons { display: flex; gap: 15px; }
         .social-icons a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: 0.3s; }
         .social-icons a:hover { background: var(--primary); transform: translateY(-3px); }
         .social-icons svg { width: 20px; height: 20px; fill: white; }
-        
         .footer-links ul { list-style: none; padding: 0; }
         .footer-links li { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
         .footer-links a { color: #9CA3AF; transition: 0.3s; }
         .footer-links a:hover { color: white; }
-        
         .copyright { text-align: center; border-top: 1px solid #374151; padding-top: 30px; font-size: 0.9rem; }
         .developer-credit { color: #6B7280; font-size: 0.85rem; margin-top: 5px; display: block; }
         .developer-credit strong { color: #9CA3AF; }
@@ -227,9 +224,9 @@
             <a href="#" class="logo"><img src="./logo.png" alt="Votofrio"></a>
             <nav class="nav-menu">
                 <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre Nós</a>
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
-                <a href="#como-funciona">Processo</a>
                 <a href="#depoimentos">Avaliações</a>
                 <a href="https://wa.me/5515996736948" class="btn">
                     Orçamento Grátis
@@ -261,40 +258,57 @@
         </div>
     </section>
 
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Quem Somos</span>
+                <h2>Sobre a Votofrio</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Empresa especializada na <span class="about-highlight">venda, instalação e manutenção de ar condicionado</span>, atuando no mercado com transparência e sempre buscando a satisfação do cliente, em <span class="about-highlight">Votorantim e região</span>.
+                    <br><br>
+                    Estamos prontos para oferecer <strong>os melhores produtos para seu projeto</strong>, trabalhamos somente com materiais de qualidade.
+                    Entre em contato e peça seu orçamento sem compromisso, será uma satisfação atendê-lo(a).
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="services" id="servicos">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <span class="section-label">O que fazemos</span>
-                <h2>Soluções em climatização</h2>
+                <h2>Serviços Prestados</h2>
             </div>
             <div class="cards-grid">
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2C6.47 4 4 6.47 4 12s2.47 8 8 8 8-2.47 8-8-2.47-8-8-8m0 5a1 1 0 0 1 1 1v4h2a1 1 0 0 1 0 2h-3a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1"/></svg>
+                    </div>
+                    <h3>Venda de Ar Condicionado</h3>
+                    <p>Trabalhamos com as melhores marcas do mercado para garantir qualidade e durabilidade.</p>
+                </div>
                 <div class="card">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.08a2 2 0 0 1 1 1.73v.51a2 2 0 0 1-1 1.73l-.15.08a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73v.18a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.73v-.51a2 2 0 0 1 1-1.73l.15-.08a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
                     </div>
                     <h3>Instalação</h3>
-                    <p>Profissionalismo em splits e sistemas centrais com garantia total.</p>
+                    <p>Instalação profissional de splits e sistemas centrais seguindo as normas técnicas.</p>
                 </div>
                 <div class="card">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
                     </div>
                     <h3>Manutenção</h3>
-                    <p>Preventiva e corretiva para manter seu aparelho sempre novo.</p>
+                    <p>Preventiva, corretiva e higienização para manter seu ar puro e eficiente.</p>
                 </div>
                 <div class="card">
                     <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22h20V2H2v20zM20 4v16H4V4h16z"/><path d="M12 7v5h5v2h-5v5H9v-5H4v-2h5V7z"/></svg>
                     </div>
-                    <h3>Reparos</h3>
-                    <p>Diagnóstico rápido e conserto de falhas e vazamentos.</p>
-                </div>
-                <div class="card">
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.69l5.74 5.88a7.81 7.81 0 0 1 0 11.06 7.84 7.84 0 0 1-11.48 0 7.81 7.81 0 0 1 0-11.06L12 2.69Z"/><path d="M12 17a3 3 0 0 1-3-3"/><path d="M12 8a8 8 0 0 1 8 8"/></svg>
-                    </div>
-                    <h3>Higienização</h3>
-                    <p>Limpeza profunda para garantir a saúde da sua família.</p>
+                    <h3>Projetos</h3>
+                    <p>Projetos personalizados para residências e comércios, focando em conforto e economia.</p>
                 </div>
             </div>
         </div>
