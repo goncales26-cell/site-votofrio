@@ -19,6 +19,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./logo.png">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,7 +29,7 @@
       "name": "Votofrio Ar Condicionado",
       "image": "https://votofrio.com.br/logo.png",
       "telephone": "+5515996736948",
-      "email": "contato@votofrio.com.br",
+      "email": "votofrio@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Votorantim, SP",
@@ -40,30 +43,10 @@
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Quanto custa instalar ar condicionado em Sorocaba?",
-        "acceptedAnswer": { "@type": "Answer", "text": "O valor depende do modelo e da estrutura do local. Solicite orçamento gratuito pelo WhatsApp." }
-      },{
-        "@type": "Question",
-        "name": "De quanto em quanto tempo devo fazer manutenção?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Recomendamos manutenção preventiva a cada 6 meses." }
-      }]
-    }
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./logo.png">
-
     <style>
         :root {
             --primary: #0F6CBD;
             --primary-hover: #0C5AA3;
-            --dark-bg: #1A202C;
             --text-main: #1F2937;
             --text-light: #6B7280;
             --bg-light: #F9FAFB;
@@ -75,54 +58,63 @@
         body { background-color: #FAFAFA; color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .text-center { text-align: center; }
+        
+        h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5px; }
+        p { color: var(--text-light); font-size: 1.05rem; }
         .section-label { color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 12px; display: block; }
 
         /* Botões */
-        .btn { display: inline-flex; align-items: center; justify-content: center; background-color: var(--primary); color: #FFFFFF !important; padding: 14px 30px; border-radius: 8px; font-weight: 600; transition: 0.3s; border: none; cursor: pointer; text-decoration: none; gap: 8px; }
-        .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
-        .btn-outline { background: transparent; border: 1px solid #E5E7EB; color: var(--text-main) !important; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; background-color: var(--primary); color: #FFFFFF !important; padding: 14px 30px; border-radius: 8px; font-weight: 600; transition: 0.3s; border: none; cursor: pointer; text-decoration: none; gap: 8px; box-shadow: 0 4px 10px rgba(15, 108, 189, 0.2); }
+        .btn:hover { background-color: var(--primary-hover); transform: translateY(-2px); box-shadow: 0 8px 15px rgba(15, 108, 189, 0.3); }
+        .btn-outline { background: transparent; border: 1px solid #E5E7EB; color: var(--text-main) !important; box-shadow: none; }
         .btn-outline:hover { background: #F3F4F6; }
 
-        /* Header & Hero */
+        /* Header */
         header { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 15px rgba(0,0,0,0.03); }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
         .logo img { height: 70px; width: auto; }
         .nav-menu { display: flex; gap: 30px; align-items: center; }
-        .nav-menu a { color: var(--text-light); font-weight: 500; text-decoration: none; }
+        .nav-menu a { color: var(--text-light); font-weight: 500; text-decoration: none; transition: 0.3s; }
         .nav-menu a:hover { color: var(--primary); }
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 1.5rem; }
+        .mobile-menu-btn { display: none; cursor: pointer; font-size: 1.8rem; color: var(--text-main); }
 
+        /* Hero */
         .hero { padding: 100px 0; background: radial-gradient(circle at top right, #EFF6FF 0%, #FFFFFF 60%); overflow: hidden; }
         .hero-wrapper { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
         .hero-content { flex: 1; min-width: 300px; }
+        .hero-tag { background: #EBF5FF; color: var(--primary); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 24px; }
         .hero h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 24px; }
         .hero h1 span { color: var(--primary); }
-        .hero-image img { width: 100%; max-width: 500px; border-radius: 20px; box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15); }
+        .hero-image { flex: 1; min-width: 300px; display: flex; justify-content: center; }
+        .hero-image img { width: 100%; max-width: 550px; border-radius: 20px; box-shadow: 0 20px 50px rgba(15, 108, 189, 0.15); object-fit: cover; }
 
-        /* Sections */
+        /* Sobre */
         .about-section { padding: 80px 0; background: white; }
-        .about-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; list-style: none; margin-top: 30px; }
+        .about-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
         .about-list li { background: #F9FAFB; padding: 10px 20px; border-radius: 50px; font-weight: 600; border: 1px solid #E5E7EB; display: flex; align-items: center; gap: 8px; }
-        
+
+        /* Serviços */
         .services { padding: 80px 0; background: #F9FAFB; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
         .card { background: white; padding: 30px; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: 0.3s; border: 1px solid #F3F4F6; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
         .icon-box { width: 60px; height: 60px; background: #EFF6FF; color: var(--primary); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; }
 
-        .brands-section { padding: 60px 0; background: white; border-top: 1px solid #F3F4F6; }
+        /* Marcas */
+        .brands-section { padding: 60px 0; background: white; }
         .brands-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
         .brand-item img { height: 40px; filter: grayscale(100%); opacity: 0.6; transition: 0.3s; }
         .brand-item:hover img { filter: grayscale(0%); opacity: 1; }
 
-        .cta-mid { padding: 80px 0; background: var(--primary); color: white; text-align: center; }
-        .cta-mid h2 { color: white; margin-bottom: 15px; }
-        
+        /* Galeria */
         .gallery-section { padding: 80px 0; background: #F9FAFB; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .gallery-item img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px 12px 0 0; }
-        .gallery-info { padding: 20px; background: white; border-radius: 0 0 12px 12px; border: 1px solid #E5E7EB; border-top: none; }
+        .gallery-item { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #E5E7EB; }
+        .gallery-item img { width: 100%; height: 280px; object-fit: cover; display: block; }
+        .gallery-info { padding: 20px; }
+        .gallery-info h4 { margin-bottom: 5px; font-size: 1.1rem; }
 
+        /* Diferenciais */
         .features { padding: 80px 0; background: white; text-align: center; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 50px; }
         .feature-icon { width: 80px; height: 80px; background: #EFF6FF; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; }
@@ -133,9 +125,16 @@
         .process-line { position: absolute; top: 45px; left: 15%; right: 15%; border-top: 2px dashed #D1D5DB; z-index: 0; }
         .process-item { position: relative; z-index: 1; flex: 1; min-width: 200px; }
         .process-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #4285F4, var(--primary)); color: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(15,108,189,0.3); font-size: 2.2rem; }
+        .process-item:hover .process-icon { transform: translateY(-5px); }
 
+        /* Depoimentos */
         .testimonials { padding: 80px 0; background: white; }
         .google-rating { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; display: block; }
+        .stars { color: #FBBF24; }
+        .review-card { background: white; padding: 25px; border-radius: 12px; border: 1px solid #E5E7EB; position: relative; text-align: left; }
+        .review-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+        .review-user { display: flex; align-items: center; gap: 12px; }
+        .review-avatar { width: 45px; height: 45px; background: #F3F4F6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #9CA3AF; }
 
         /* Contato */
         .contact-section { padding: 80px 0; background: #F8FAFC; }
@@ -143,11 +142,12 @@
         .form-card { background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
         .form-input { width: 100%; padding: 12px; border: 1px solid #E2E8F0; border-radius: 8px; margin-bottom: 15px; }
 
-        /* FAQ e SEO */
+        /* FAQ */
         .faq-section { background: #F9FAFB; padding: 60px 0; }
         .faq-box h3 { font-size: 1.1rem; color: var(--text-main); margin-bottom: 8px; margin-top: 20px; }
         .faq-box p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 20px; border-bottom: 1px solid #E5E7EB; padding-bottom: 15px; }
-        
+
+        /* SEO & Footer */
         .seo-text-section { background: white; padding: 60px 0; border-top: 1px solid #E5E7EB; }
         .seo-footer { background: #111827; padding: 60px 0 20px; color: #9CA3AF; border-bottom: 1px solid #374151; }
         .seo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
@@ -156,12 +156,9 @@
 
         footer { background: #111827; color: #D1D5DB; padding: 40px 0 30px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-logo { color: white; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; display: block; }
-        
         .social-icons { display: flex; gap: 15px; }
         .social-icons a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: 0.3s; color: white; font-size: 1.2rem; }
         .social-icons a:hover { background: var(--primary); transform: translateY(-3px); }
-        
         .footer-links ul { list-style: none; padding: 0; }
         .footer-links li { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
         .footer-links a { color: #9CA3AF; text-decoration: none; display: block; margin-bottom: 8px; }
@@ -171,6 +168,7 @@
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4); z-index: 1000; transition: 0.3s; color: white; font-size: 2rem; }
         .whatsapp-float:hover { transform: scale(1.1); }
 
+        @media(min-width: 768px){ .process-line { display: block; } }
         @media(max-width: 768px){ 
             .nav-menu { display: none; } 
             .mobile-menu-btn { display: block; } 
@@ -191,9 +189,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#depoimentos">Avaliações</a>
-                <a href="https://wa.me/5515996736948" class="btn">
-                    Orçamento Grátis
-                </a>
+                <a href="https://wa.me/5515996736948" class="btn">Orçamento Grátis</a>
             </nav>
             <div class="mobile-menu-btn">
                 <i class="bi bi-list"></i>
@@ -267,7 +263,7 @@
                     <p>Preventiva, corretiva e higienização para manter seu ar puro e eficiente.</p>
                 </div>
                 <div class="card">
-                    <div class="icon-box"><i class="bi bi-ruler-combined"></i></div>
+                    <div class="icon-box"><i class="bi bi-clipboard-check-fill"></i></div>
                     <h3>Projetos</h3>
                     <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
                 </div>
@@ -297,10 +293,10 @@
         </div>
     </section>
 
-    <section class="cta-mid">
+    <section class="cta-mid" style="background:var(--primary); padding:80px 0; color:white; text-align:center;">
         <div class="container">
             <h2>Precisa de um técnico hoje?</h2>
-            <p style="margin: 15px 0 25px; color: #E0F2FE;">Atendimento prioritário via WhatsApp para Sorocaba e Votorantim.</p>
+            <p>Atendimento prioritário via WhatsApp para Sorocaba e Votorantim.</p>
             <a href="https://wa.me/5515996736948" class="btn" style="background: white; color: var(--primary) !important;">
                 Chamar no WhatsApp agora <i class="bi bi-whatsapp"></i>
             </a>
@@ -393,30 +389,68 @@
         <div class="container">
             <div class="section-header text-center">
                 <div class="google-rating">
-                    <span style="font-weight: 700; font-size: 1.5rem;">5.0</span>
-                    <span class="stars">★★★★★</span>
+                    <span style="font-size: 1.5rem;">5.0</span>
+                    <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <span style="color: #6B7280; font-size: 0.9rem; font-weight: 400; margin-left: 5px;">(87+ avaliações no Google)</span>
                 </div>
                 <h2>O que dizem nossos clientes</h2>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
-                <div class="card">
-                    <p style="margin-bottom:10px;">"Técnicos excelentes, resolveram meu problema no mesmo dia. Recomendo muito!"</p>
-                    <strong>Ivan Albuquerque</strong>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user">
+                            <div class="review-avatar"><i class="bi bi-person-fill"></i></div>
+                            <div>
+                                <strong style="display:block; line-height:1.2;">Ivan Albuquerque</strong>
+                                <span style="font-size:0.8rem; color:#9CA3AF;">4 meses atrás</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-google" style="color:#4285F4; font-size:1.2rem;"></i>
+                    </div>
+                    <div style="color:#FBBF24; margin-bottom:10px; font-size:0.9rem;">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p style="font-size:0.95rem; color:#4B5563;">"Técnicos excelentes, resolveram meu problema no mesmo dia. Recomendo muito!"</p>
                 </div>
-                <div class="card">
-                    <p style="margin-bottom:10px;">"Trabalho limpo e organizado. O ar ficou gelando como novo."</p>
-                    <strong>Rosana Rodrigues</strong>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user">
+                            <div class="review-avatar"><i class="bi bi-person-fill"></i></div>
+                            <div>
+                                <strong style="display:block; line-height:1.2;">Rosana Rodrigues</strong>
+                                <span style="font-size:0.8rem; color:#9CA3AF;">2 meses atrás</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-google" style="color:#4285F4; font-size:1.2rem;"></i>
+                    </div>
+                    <div style="color:#FBBF24; margin-bottom:10px; font-size:0.9rem;">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p style="font-size:0.95rem; color:#4B5563;">"Trabalho limpo e organizado. O ar ficou gelando como novo."</p>
                 </div>
-                <div class="card">
-                    <p style="margin-bottom:10px;">"Preço justo e serviço completo. Fizeram um bom trabalho no meu apartamento."</p>
-                    <strong>Kaique Motta</strong>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user">
+                            <div class="review-avatar"><i class="bi bi-person-fill"></i></div>
+                            <div>
+                                <strong style="display:block; line-height:1.2;">Kaique Motta</strong>
+                                <span style="font-size:0.8rem; color:#9CA3AF;">2 anos atrás</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-google" style="color:#4285F4; font-size:1.2rem;"></i>
+                    </div>
+                    <div style="color:#FBBF24; margin-bottom:10px; font-size:0.9rem;">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p style="font-size:0.95rem; color:#4B5563;">"Preço justo (melhor preço da região) Serviço completo."</p>
                 </div>
+
             </div>
             <div class="text-center" style="margin-top: 40px;">
-                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn btn-outline">
-                    Ver todas as avaliações no Google
-                </a>
+                <a href="https://g.page/r/CbO-s1vP4M5PEAE/review" target="_blank" class="btn btn-outline">Ver todas as avaliações</a>
             </div>
         </div>
     </section>
@@ -428,33 +462,41 @@
                     <span class="section-label">Fale Conosco</span>
                     <h2>Vamos agendar sua visita?</h2>
                     <p style="margin-bottom: 30px;">Respondemos em poucos minutos pelo WhatsApp.</p>
-                    <div style="margin-bottom: 20px;">
-                        <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> (15) 99673-6948 <br>
-                        <strong><i class="bi bi-geo-alt-fill"></i> Atendimento:</strong> Sorocaba, Votorantim e Região
+                    
+                    <div style="display:flex; flex-direction:column; gap:20px;">
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <div style="width:50px; height:50px; background:#EFF6FF; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:1.5rem;"><i class="bi bi-whatsapp"></i></div>
+                            <div>
+                                <strong style="display:block; color:#1E293B;">WhatsApp</strong>
+                                <span style="color:#64748B;">(15) 99673-6948</span>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <div style="width:50px; height:50px; background:#EFF6FF; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:1.5rem;"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <strong style="display:block; color:#1E293B;">E-mail</strong>
+                                <span style="color:#64748B;">votofrio@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <div style="width:50px; height:50px; background:#EFF6FF; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:1.5rem;"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <strong style="display:block; color:#1E293B;">Atendimento</strong>
+                                <span style="color:#64748B;">Sorocaba, Votorantim e Região</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px;">Solicite Orçamento</h3>
                     <form id="contactForm">
-                        <div class="form-group">
-                            <label>Nome Completo</label>
-                            <input type="text" id="nome" class="form-input" placeholder="Ex: João Silva" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Telefone / WhatsApp</label>
-                            <input type="tel" id="telefone" class="form-input" placeholder="(15) 99999-9999" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Como podemos ajudar?</label>
-                            <textarea id="mensagem" rows="4" class="form-input" placeholder="Descreva brevemente o serviço..."></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%; font-size: 1rem; padding: 16px;">
-                            Enviar via WhatsApp <i class="bi bi-send-fill"></i>
-                        </button>
-                        <p style="text-align: center; font-size: 0.85rem; color: #94A3B8; margin-top: 15px;">
-                            <span style="display: inline-block; width: 8px; height: 8px; background: #22C55E; border-radius: 50%; margin-right: 5px;"></span>
-                            Respondemos em poucos minutos
-                        </p>
+                        <div class="form-group"><label>Nome Completo</label><input type="text" id="nome" class="form-input" placeholder="Ex: João Silva" required></div>
+                        <div class="form-group"><label>Telefone / WhatsApp</label><input type="tel" id="telefone" class="form-input" placeholder="(15) 99999-9999" required></div>
+                        <div class="form-group"><label>Como podemos ajudar?</label><textarea id="mensagem" rows="4" class="form-input" placeholder="Descreva brevemente o serviço..."></textarea></div>
+                        <button type="submit" class="btn" style="width:100%;">Enviar via WhatsApp <i class="bi bi-send-fill"></i></button>
                     </form>
                 </div>
             </div>
@@ -547,7 +589,7 @@
                     <span class="footer-logo">Votofrio</span>
                     <p style="color: #9CA3AF; font-size: 0.9rem; margin-bottom: 15px;">Climatização profissional com qualidade e confiança.</p>
                     
-                    <span class="social-label">Siga-nos nas redes sociais:</span>
+                    <span class="social-label">Siga-nos:</span>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/votofrio_arcondicionado/" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a href="https://www.facebook.com/votofrio.arcondi" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -569,7 +611,7 @@
                             <i class="bi bi-whatsapp"></i> (15) 99673-6948
                         </li>
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="bi bi-envelope"></i> contato@votofrio.com.br
+                            <i class="bi bi-envelope"></i> votofrio@gmail.com
                         </li>
                     </ul>
                 </div>
