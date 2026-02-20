@@ -69,6 +69,10 @@
         .btn-outline { background: transparent; border: 1px solid #E5E7EB; color: var(--text-main) !important; box-shadow: none; }
         .btn-outline:hover { background: #F3F4F6; }
 
+        /* NOVO: Botão CTA dos Serviços */
+        .btn-service-cta { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; color: #25d366; font-weight: 700; text-decoration: none; border: 2px solid #25d366; padding: 8px 16px; border-radius: 25px; font-size: 0.9rem; transition: all 0.3s ease; }
+        .btn-service-cta:hover { background-color: #25d366; color: white; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+
         /* Header */
         header { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 15px rgba(0,0,0,0.03); }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
@@ -96,7 +100,7 @@
         /* Serviços */
         .services { padding: 80px 0; background: #F9FAFB; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 30px; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: 0.3s; border: 1px solid #F3F4F6; }
+        .card { background: white; padding: 30px; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: 0.3s; border: 1px solid #F3F4F6; display: flex; flex-direction: column; align-items: center; text-align: center; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
         .icon-box { width: 60px; height: 60px; background: #EFF6FF; color: var(--primary); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; }
 
@@ -145,9 +149,12 @@
         .form-input { width: 100%; padding: 12px; border: 1px solid #E2E8F0; border-radius: 8px; margin-bottom: 15px; }
 
         /* FAQ */
-        .faq-section { background: #F9FAFB; padding: 60px 0; }
-        .faq-box h3 { font-size: 1.1rem; color: var(--text-main); margin-bottom: 8px; margin-top: 20px; }
-        .faq-box p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 20px; border-bottom: 1px solid #E5E7EB; padding-bottom: 15px; }
+        .faq-section { background: #F9FAFB; padding: 80px 0; }
+        .faq-grid { display: grid; grid-template-columns: 1fr; gap: 20px; max-width: 900px; margin: 40px auto 0; }
+        .faq-box { background: white; padding: 25px; border-radius: 12px; border: 1px solid #E5E7EB; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .faq-box h3 { font-size: 1.1rem; color: var(--text-main); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .faq-box h3 i { color: var(--primary); }
+        .faq-box p { color: var(--text-light); font-size: 0.95rem; margin: 0; }
 
         /* SEO & Footer */
         .seo-text-section { background: white; padding: 60px 0; border-top: 1px solid #E5E7EB; }
@@ -170,7 +177,7 @@
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4); z-index: 1000; transition: 0.3s; color: white; font-size: 2rem; }
         .whatsapp-float:hover { transform: scale(1.1); }
 
-        @media(min-width: 768px){ .process-line { display: block; } }
+        @media(min-width: 768px){ .process-line { display: block; } .faq-grid { grid-template-columns: 1fr 1fr; } }
         @media(max-width: 768px){ 
             .nav-menu { display: none; } 
             .mobile-menu-btn { display: block; } 
@@ -252,22 +259,26 @@
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-cart4"></i></div>
                     <h3>Venda</h3>
-                    <p>Trabalhamos com as melhores marcas: Samsung, LG, Springer, Elgin e Daikin.</p>
+                    <p style="margin-bottom: 20px;">Trabalhamos com as melhores marcas: Samsung, LG, Springer, Elgin e Daikin.</p>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20COMPRAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Venda</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-screwdriver"></i></div>
                     <h3>Instalação</h3>
-                    <p>Instalação profissional de splits e sistemas centrais seguindo as normas técnicas.</p>
+                    <p style="margin-bottom: 20px;">Instalação profissional de splits e sistemas centrais seguindo as normas técnicas.</p>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20INSTALAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Instalação</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-tools"></i></div>
                     <h3>Manutenção</h3>
-                    <p>Resolvemos vazamentos, ar que não gela, falhas elétricas e fazemos higienização completa.</p>
+                    <p style="margin-bottom: 20px;">Resolvemos vazamentos, ar que não gela, falhas elétricas e higienização.</p>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20preciso%20de%20MANUTENÇÃO%20no%20meu%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Conserto</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-card-checklist"></i></div>
                     <h3>Projetos</h3>
-                    <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
+                    <p style="margin-bottom: 20px;">Projetos residenciais e comerciais focados em economia e conforto.</p>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20PROJETO%20de%20Climatização" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Projeto</a>
                 </div>
             </div>
         </div>
@@ -459,6 +470,33 @@
         </div>
     </section>
 
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Tire suas dúvidas</span>
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-box">
+                    <h3><i class="bi bi-question-circle"></i> Vocês fornecem o aparelho ou só instalam?</h3>
+                    <p>Trabalhamos com a venda dos equipamentos multimarcas, mas também realizamos apenas o serviço de instalação caso você já tenha comprado o seu ar condicionado.</p>
+                </div>
+                <div class="faq-box">
+                    <h3><i class="bi bi-question-circle"></i> Quanto tempo dura a instalação?</h3>
+                    <p>Em média, uma instalação padrão leva de 2 a 4 horas. Mas não se preocupe, trabalhamos de forma limpa e protegemos seu ambiente.</p>
+                </div>
+                <div class="faq-box">
+                    <h3><i class="bi bi-question-circle"></i> Vocês trabalham com tecnologia Inverter?</h3>
+                    <p>Sim! Somos especialistas em aparelhos Inverter. Eles são mais silenciosos e podem economizar até 70% de energia elétrica na sua conta.</p>
+                </div>
+                <div class="faq-box">
+                    <h3><i class="bi bi-question-circle"></i> De quanto em quanto tempo devo fazer manutenção?</h3>
+                    <p>Para residências, recomendamos a higienização a cada 6 meses. Para comércios, a manutenção preventiva mensal é o ideal para a saúde do ar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contact-section" id="contato">
         <div class="container">
             <div class="contact-wrapper">
@@ -480,6 +518,11 @@
                             <div><strong style="display:block; color:#1E293B;">Atendimento</strong><span style="color:#64748B;">Sorocaba, Votorantim e Região</span></div>
                         </div>
                     </div>
+                    
+                    <div style="margin-top: 30px; border-radius: 12px; overflow: hidden; border: 1px solid #E5E7EB; height: 200px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117070.76011400262!2d-47.531201201594954!3d-23.511394140003058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f53c15555555%3A0x8e83c270d74ebc7f!2sVotorantim%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px;">Solicite Orçamento</h3>
@@ -490,24 +533,6 @@
                         <button type="submit" class="btn" style="width:100%;">Enviar via WhatsApp <i class="bi bi-send-fill"></i></button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Perguntas Frequentes</h2>
-            </div>
-            <div class="faq-box" style="max-width:800px; margin:30px auto;">
-                <h3>Quanto custa instalar ar condicionado em Sorocaba?</h3>
-                <p>O valor depende do modelo e da estrutura do local. Solicite orçamento gratuito pelo WhatsApp.</p>
-
-                <h3>De quanto em quanto tempo devo fazer manutenção?</h3>
-                <p>Recomendamos manutenção preventiva a cada 6 meses para garantir a saúde do ar e economia de energia.</p>
-
-                <h3>Vocês atendem empresas?</h3>
-                <p>Sim. Atendemos residências, comércios e empresas em Sorocaba, Votorantim e região.</p>
             </div>
         </div>
     </section>
@@ -576,7 +601,7 @@
     <section style="background-color: var(--primary); color: white; padding: 3rem 0; text-align: center;">
         <div class="container">
             <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.6rem;">Facilidade no Pagamento</h3>
-            <p style="color: #E0F2FE; margin-bottom: 2rem; font-size: 1.1rem;"><i class="bi bi-check2-circle"></i> Você só paga <strong>após a conclusão</strong> do serviço!</p>
+            <p style="color: #E0F2FE; margin-bottom: 2rem; font-size: 1.1rem;"><i class="bi bi-shield-lock-fill"></i> Fique tranquilo: Você só paga <strong>após a conclusão</strong> do serviço!</p>
             <div style="display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; font-size: 1.1rem;">
                 <span style="display: flex; align-items: center; gap: 8px;"><i class="bi bi-qr-code"></i> PIX e Dinheiro</span>
                 <span style="display: flex; align-items: center; gap: 8px;"><i class="bi bi-credit-card-fill"></i> Cartões de Crédito e Débito</span>
