@@ -72,7 +72,7 @@
         /* Header */
         header { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 15px rgba(0,0,0,0.03); }
         .nav-flex { display: flex; justify-content: space-between; align-items: center; }
-        .logo img { height: 70px; width: auto; }
+        .logo img { height: 70px; width: auto; border-radius: 8px; }
         .nav-menu { display: flex; gap: 30px; align-items: center; }
         .nav-menu a { color: var(--text-light); font-weight: 500; text-decoration: none; transition: 0.3s; }
         .nav-menu a:hover { color: var(--primary); }
@@ -184,7 +184,7 @@
 
     <header>
         <div class="container nav-flex">
-            <a href="#" class="logo"><img src="./logo.png" alt="Votofrio" style="border-radius: 8px;"></a>
+            <a href="#" class="logo"><img src="./logo.png" alt="Votofrio"></a>
             <nav class="nav-menu">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre Nós</a>
@@ -265,9 +265,9 @@
                     <p>Resolvemos vazamentos, ar que não gela, falhas elétricas e fazemos higienização completa.</p>
                 </div>
                 <div class="card">
-                <div class="icon-box"><i class="bi bi-card-checklist"></i></div>
-                <h3>Projetos</h3>
-                <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
+                    <div class="icon-box"><i class="bi bi-card-checklist"></i></div>
+                    <h3>Projetos</h3>
+                    <p>Projetos residenciais e comerciais focados em economia e conforto.</p>
                 </div>
             </div>
         </div>
@@ -355,8 +355,8 @@
                 </div>
                 <div>
                     <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
-                    <h3>Garantia Total</h3>
-                    <p class="feature-desc">Segurança e respaldo completo em todos os serviços prestados.</p>
+                    <h3>Garantia Oficial</h3>
+                    <p class="feature-desc">6 meses de garantia em instalações e 3 meses em correções de vazamento de gás.</p>
                 </div>
                 <div>
                     <div class="feature-icon"><i class="bi bi-stars"></i></div>
@@ -573,6 +573,18 @@
         </div>
     </section>
 
+    <section style="background-color: var(--primary); color: white; padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.6rem;">Facilidade no Pagamento</h3>
+            <p style="color: #E0F2FE; margin-bottom: 2rem; font-size: 1.1rem;"><i class="bi bi-check2-circle"></i> Você só paga <strong>após a conclusão</strong> do serviço!</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; font-size: 1.1rem;">
+                <span style="display: flex; align-items: center; gap: 8px;"><i class="bi bi-qr-code"></i> PIX e Dinheiro</span>
+                <span style="display: flex; align-items: center; gap: 8px;"><i class="bi bi-credit-card-fill"></i> Cartões de Crédito e Débito</span>
+                <span style="display: flex; align-items: center; gap: 8px;"><i class="bi bi-calendar3"></i> Em até <strong>3x sem juros</strong> (ou 12x c/ juros)</span>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -644,6 +656,3 @@
     </script>
 </body>
 </html>
-
-
-
