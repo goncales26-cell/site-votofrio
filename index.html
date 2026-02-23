@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17971925423"></script>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17971925423"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,9 +10,12 @@
   gtag('config', 'AW-17971925423');
 </script>
     
-<!-- Event snippet for Clique Botão WhatsApp conversion page -->
 <script>
-  gtag('event', 'conversion', {'send_to': 'AW-17971925423/z-zZCKvS3P0bEK-j1_lC'});
+  function registrarConversaoWhats() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17971925423/z-zZCKvS3P0bEK-j1_lC'
+    });
+  }
 </script>
     
     <meta charset="UTF-8">
@@ -213,7 +215,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#depoimentos">Avaliações</a>
-                <a href="https://wa.me/5515996736948" class="btn">Orçamento Grátis</a>
+                <a href="https://wa.me/5515996736948" class="btn" onclick="registrarConversaoWhats()">Orçamento Grátis</a>
             </nav>
             <div class="mobile-menu-btn">
                 <i class="bi bi-list"></i>
@@ -229,7 +231,7 @@
                     <h1>Instalação e Manutenção de Ar Condicionado em <span>Sorocaba</span> e <span>Votorantim</span></h1>
                     <p>Equipe especializada em climatização em Votorantim, Sorocaba e região. Atendimento rápido, técnico certificado e garantia em todos os serviços.</p>
                     <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <a href="https://wa.me/5515996736948" class="btn">
+                        <a href="https://wa.me/5515996736948" class="btn" onclick="registrarConversaoWhats()">
                             Solicite um Orçamento <i class="bi bi-whatsapp"></i>
                         </a>
                         <a href="tel:15996736948" class="btn btn-outline">
@@ -275,25 +277,25 @@
                     <div class="icon-box"><i class="bi bi-cart4"></i></div>
                     <h3>Venda</h3>
                     <p style="margin-bottom: 20px;">Trabalhamos com as melhores marcas: Samsung, LG, Springer, Elgin e Daikin.</p>
-                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20COMPRAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Venda</a>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20COMPRAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank" onclick="registrarConversaoWhats()"><i class="bi bi-whatsapp"></i> Orçar Venda</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-screwdriver"></i></div>
                     <h3>Instalação</h3>
                     <p style="margin-bottom: 20px;">Instalação profissional de splits e sistemas centrais seguindo as normas técnicas.</p>
-                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20INSTALAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Instalação</a>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20INSTALAR%20um%20Ar%20Condicionado" class="btn-service-cta" target="_blank" onclick="registrarConversaoWhats()"><i class="bi bi-whatsapp"></i> Orçar Instalação</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-tools"></i></div>
                     <h3>Manutenção</h3>
                     <p style="margin-bottom: 20px;">Resolvemos vazamentos, ar que não gela, falhas elétricas e higienização.</p>
-                    <a href="https://wa.me/5515996736948?text=Olá,%20preciso%20de%20MANUTENÇÃO%20no%20meu%20Ar%20Condicionado" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Conserto</a>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20preciso%20de%20MANUTENÇÃO%20no%20meu%20Ar%20Condicionado" class="btn-service-cta" target="_blank" onclick="registrarConversaoWhats()"><i class="bi bi-whatsapp"></i> Orçar Conserto</a>
                 </div>
                 <div class="card">
                     <div class="icon-box"><i class="bi bi-card-checklist"></i></div>
                     <h3>Projetos</h3>
                     <p style="margin-bottom: 20px;">Projetos residenciais e comerciais focados em economia e conforto.</p>
-                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20PROJETO%20de%20Climatização" class="btn-service-cta" target="_blank"><i class="bi bi-whatsapp"></i> Orçar Projeto</a>
+                    <a href="https://wa.me/5515996736948?text=Olá,%20gostaria%20de%20falar%20sobre%20um%20PROJETO%20de%20Climatização" class="btn-service-cta" target="_blank" onclick="registrarConversaoWhats()"><i class="bi bi-whatsapp"></i> Orçar Projeto</a>
                 </div>
             </div>
         </div>
@@ -325,7 +327,7 @@
         <div class="container">
             <h2 style="color: white;">Precisa de um técnico hoje?</h2>
             <p style="color: white; margin: 15px 0 25px;">Atendimento prioritário via WhatsApp para Sorocaba e Votorantim.</p>
-            <a href="https://wa.me/5515996736948" class="btn" style="background: white; color: var(--primary) !important;">
+            <a href="https://wa.me/5515996736948" class="btn" style="background: white; color: var(--primary) !important;" onclick="registrarConversaoWhats()">
                 Chamar no WhatsApp agora <i class="bi bi-whatsapp"></i>
             </a>
         </div>
@@ -546,7 +548,7 @@
                         <div class="form-group"><label>Nome Completo</label><input type="text" id="nome" class="form-input" placeholder="Ex: João Silva" required></div>
                         <div class="form-group"><label>Telefone / WhatsApp</label><input type="tel" id="telefone" class="form-input" placeholder="(15) 99999-9999" required></div>
                         <div class="form-group"><label>Como podemos ajudar?</label><textarea id="mensagem" rows="4" class="form-input" placeholder="Descreva brevemente o serviço..."></textarea></div>
-                        <button type="submit" class="btn" style="width:100%;">Enviar via WhatsApp <i class="bi bi-send-fill"></i></button>
+                        <button type="submit" class="btn" style="width:100%;" onclick="registrarConversaoWhats()">Enviar via WhatsApp <i class="bi bi-send-fill"></i></button>
                     </form>
                 </div>
             </div>
@@ -668,9 +670,8 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5515996736948?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Votofrio%20e%20gostaria%20de%20um%20or%C3%A7amento." class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5515996736948?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Votofrio%20e%20gostaria%20de%20um%20or%C3%A7amento." class="whatsapp-float" target="_blank" onclick="registrarConversaoWhats()">
         <i class="bi bi-whatsapp"></i>
-    </a>
     </a>
 
     <script>
@@ -698,8 +699,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
