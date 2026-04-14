@@ -361,8 +361,11 @@
                 </p>
             </div>
             
-            <script src="https://elfsightcdn.com/platform.js" async></script>
-            <div class="elfsight-app-24babeb6-09bf-41d1-a775-8ec6d0fe7977" data-elfsight-app-lazy></div>
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <div style="width: 100%; max-width: 900px;"> <script src="https://elfsightcdn.com/platform.js" async></script>
+                    <div class="elfsight-app-24babeb6-09bf-41d1-a775-8ec6d0fe7977" data-elfsight-app-lazy></div>
+                </div>
+            </div>
             <div class="text-center" style="margin-top: 40px;">
                 <a href="https://www.instagram.com/votofrio_arcondicionado/" target="_blank" class="btn" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none;">
                     <i class="bi bi-instagram"></i> Seguir Votofrio
@@ -370,6 +373,16 @@
             </div>
         </div>
     </section>
+    ```
+
+### **Por que isso funciona?**
+1.  **`display: flex`**: Transforma o container em uma caixa flexível.
+2.  **`justify-content: center`**: Pega o conteúdo (o widget do Instagram) e joga exatamente para o meio do eixo horizontal.
+3.  **`max-width: 900px`**: Impede que o carrossel de fotos fique "gigante" em monitores de computador, mantendo uma proporção elegante e fácil de ver.
+
+**Dica extra:** No painel do Elfsight, se você puder, mude a configuração de colunas para **1** ou **2** no mobile, assim as fotos aparecem maiores no celular do cliente.
+
+Salve o arquivo e dê um `F5` no navegador. Agora o site da Votofrio vai estar com tudo milimetricamente alinhado! Me confirme se centralizou aí.
     <section class="features" id="diferenciais">
         <div class="container">
             <div class="section-header">
